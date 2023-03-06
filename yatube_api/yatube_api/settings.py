@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'djoser',
-    'django_filters',
     'posts',
 ]
 
