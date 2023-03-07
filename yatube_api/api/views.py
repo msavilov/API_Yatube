@@ -46,7 +46,7 @@ class FollowViewSet(mixins.CreateModelMixin,
     permission_classes = (permissions.IsAuthenticated,)
 
     def get_queryset(self):
-        return self.request.user.follower.all()
+        return self.request.user.follower
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)

@@ -2,6 +2,16 @@
 Проект даёт возможность работать с проектом Yatube по средством Django REST 
 framework.
 
+## Автор
+Студент кагорты 53 курса "Python Backend" Яндекс.Практикум
+*Савилов Максим*
+
+## Стек технологий
+```
+- Python 3.11.0
+- Django 3.2.16
+- Django Rest Framework 3.12.4
+```
 
 ## Установка и запуск проекта:
 
@@ -42,12 +52,12 @@ pip install -r requirements.txt
 
 Выполнить миграции:
 ```
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 Запустить проект:
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ## Примеры запросов к API
@@ -67,7 +77,7 @@ python manage.py runserver
 }
 ```
 
-#### Получение публикации по id
+#### Добавление публикации
 Запрос: POST /api/v1/posts/
 Статус ответа: 201 Удачное выполнение запроса
 Ответ: 
